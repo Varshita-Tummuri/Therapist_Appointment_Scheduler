@@ -1,0 +1,220 @@
+.therapist-page {
+  background-image: url("src/assets/physical-therapy-running-human-digital-art-6x9w4mzvra10kfbm.jpg");
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px !important;
+}
+
+.therapist-container {
+  width: 100%;
+  max-width: 960px;
+  padding: 0 24px 80px;
+}
+
+.therapist-header {
+  margin-bottom: 28px;
+}
+
+.therapist-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+  text-shadow: 1px 1px 6px rgba(60, 0, 28, 0.8);
+}
+
+.therapist-sub {
+  color: rgba(255, 220, 235, 0.75);
+  font-size: 0.95rem;
+}
+
+/* Availability card */
+.availability-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 36px 40px;
+  margin-bottom: 40px;
+}
+
+.card-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.card-desc {
+  color: rgba(255, 220, 235, 0.7);
+  font-size: 0.88rem;
+  margin-bottom: 24px;
+}
+
+.avail-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.avail-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.avail-field label {
+  color: rgba(255, 220, 235, 0.85);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.avail-input {
+  padding: 10px 14px !important;
+  background: rgba(255, 166, 196, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+  font-size: 0.95rem;
+}
+
+.avail-input::-webkit-calendar-picker-indicator { filter: invert(1); }
+
+.avail-arrow {
+  color: rgba(255, 220, 235, 0.6);
+  font-size: 1.4rem;
+  padding-bottom: 6px;
+}
+
+.save-btn {
+  padding: 10px 28px !important;
+  font-size: 0.9rem !important;
+  align-self: flex-end;
+}
+
+/* Time bar visualiser */
+.time-bar-wrap {
+  margin-top: 24px;
+}
+
+.time-bar-bg {
+  position: relative;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.time-bar-fill {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(158, 0, 74), rgb(255, 69, 156));
+  border-radius: 999px;
+  transition: left 0.4s ease, width 0.4s ease;
+}
+
+.time-bar-labels {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 220, 235, 0.45);
+  font-size: 0.72rem;
+  margin-bottom: 8px;
+}
+
+.time-bar-caption {
+  color: rgba(255, 220, 235, 0.7);
+  font-size: 0.85rem;
+}
+
+.time-bar-caption strong {
+  color: #fff;
+}
+
+/* Section headings */
+.section-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.count-badge {
+  background: rgba(158, 0, 74, 0.5);
+  border: 1px solid rgba(255, 69, 156, 0.4);
+  color: rgb(255, 180, 210);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 999px;
+}
+
+.cancelled-badge {
+  background: rgba(224, 64, 64, 0.2);
+  border-color: rgba(224, 64, 64, 0.4);
+  color: rgb(255, 160, 160);
+}
+
+/* Appointment cards — reuse MyAppointments styles */
+.appts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.therapist-appt-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease;
+}
+
+.therapist-appt-card:hover {
+  transform: translateY(-3px);
+}
+
+.cancelled-card {
+  opacity: 0.55;
+}
+
+.appt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appt-id {
+  color: rgba(255, 220, 235, 0.5);
+  font-size: 0.82rem;
+}
+
+.appt-status {
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.appt-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 240, 248, 0.85);
+  font-size: 0.88rem;
+}
+
+.msg-success { color: rgb(100, 255, 180); font-size: 0.9rem; }
+.msg-error   { color: rgb(252, 109, 156); font-size: 0.9rem; }
+.loading-text { color: rgba(255, 220, 235, 0.6); font-size: 0.95rem; }

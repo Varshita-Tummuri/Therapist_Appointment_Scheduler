@@ -1,0 +1,111 @@
+.mybutton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(158, 0, 74);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  /* color: rgb(51, 1, 24); */
+  box-shadow: black;
+}
+.mybutton:hover{
+  background-color: rgb(60, 0, 28);
+  color: rgb(0, 0, 0);
+}
+.mytextBox{
+  color: black;
+  padding: 10px 20px;
+  border: double;
+  border-radius: 4px;
+  border-color: black;
+  background-color: rgba(255, 166, 196, 0.347);
+  display: inline-block;
+  flex-direction:row;
+  gap: 8px;
+}
+.mytextBox:hover{
+  background-color: rgb(255, 255, 255);
+}
+.myDropdownBox{
+  padding: 5px 5px;
+  background-color: rgb(255, 166, 196);
+  color: black;
+  margin-top: 5px;
+  display:inline-block;
+  border: none;
+  flex-direction: row;
+  border-radius: 20px;
+}
+.myDropdownBox:hover{
+  background-color: rgb(178, 219, 255);
+  color: black;
+}
+.mytextBox2{
+  color: black;
+  padding: 10px 20px;
+  border: double;
+  border-radius: 4px;
+  border-color: black;
+  background-color: rgba(255, 166, 196, 0.347);
+  flex-direction:row;
+  gap: 8px;
+}
+.mytextBox2:hover{
+  background-color: rgb(255, 255, 255);
+}
+.loginfont{
+  font-size: larger;
+  font-weight: 1000;
+  font-style: italic;
+  padding-top: 16px;
+}
+.lablefonts{
+  font-weight: 500;
+  font-style: italic;
+}
+.loginborder{
+  border: 2px solid black;
+  /* padding-bottom: 100px; */
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  /* background-color: #507ba6; */
+  border-radius: 20px;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.251);
+}
+.Button{
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("src/assets/9487-female_therapist_patient_room-1296x728-header.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-sub {
+  color: rgba(100, 60, 80, 0.7);
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+  margin-top: 2xp;
+}
+
+.login-hint {
+  font-size: 0.78rem;
+  color: rgba(100, 60, 80, 0.6);
+  margin-top: -8px;
+  font-style: italic;
+}
+
+.Email, .Password {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
