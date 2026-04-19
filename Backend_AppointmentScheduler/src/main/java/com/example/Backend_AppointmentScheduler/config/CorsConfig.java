@@ -16,6 +16,6 @@ public class CorsConfig implements WebMvcConfigurer {
                 .allowedOrigins("*") //https://therapist-appointment-scheduler-ayyxeyqxk.vercel.app/
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
-                .allowCredentials(true);
+                .allowCredentials(false);
     }
 }
