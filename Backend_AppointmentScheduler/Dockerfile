@@ -7,8 +7,8 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/target/Backend_AppointmentScheduler-0.0.1-SNAPSHOT.jar .
 
 EXPOSE 8081
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "app/Backend_AppointmentScheduler-0.0.1-SNAPSHOT.jar"]
