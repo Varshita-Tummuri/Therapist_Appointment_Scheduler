@@ -69,7 +69,14 @@ function Register() {
       else navigate("/home");   
 
     } catch (err) {
-      setError(err.response?.data || "Registration failed. Please try again.");
+      const data = err.response?.data;
+      if (typeof data === "string") {
+        setError(data);
+      } else if (data?.message) {
+        setError(data.message);
+      } else {
+        setError("Registration failed. Please try again.");
+      }
     } finally {
       setLoading(false);
     }
