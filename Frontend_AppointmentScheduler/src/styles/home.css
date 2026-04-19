@@ -57,7 +57,7 @@
 
   padding: 70px 80px;
 
-  background-image: url("/homeImage.webp");
+  background-image: url("../assets/homeImage.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

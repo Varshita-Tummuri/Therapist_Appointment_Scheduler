@@ -84,7 +84,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/homeImage.webp");
+  background-image: url("../assets/homeImage.webp");
   background-size: cover;
   background-position: center;
 }

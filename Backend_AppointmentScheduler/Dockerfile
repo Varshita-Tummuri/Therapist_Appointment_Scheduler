@@ -11,4 +11,4 @@ COPY --from=build /app/target/Backend_AppointmentScheduler-0.0.1-SNAPSHOT.jar .
 
 EXPOSE 8081
 
-CMD ["java", "-jar", "app/Backend_AppointmentScheduler-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "Backend_AppointmentScheduler-0.0.1-SNAPSHOT.jar"]

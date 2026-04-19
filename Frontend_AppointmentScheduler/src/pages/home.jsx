@@ -1,6 +1,8 @@
 import NavBar from "./NavBar";
 import { useNavigate } from "react-router-dom";
 import "../styles/home.css";
+import therapyImg from "../assets/therapy.png";
+
 
 
 function Home() {
@@ -40,7 +42,7 @@ function Home() {
 
 
           <div className="right-content">
-            <img className="image" src="/therapy.png" alt="Book your therapy session" />
+            <img className="image" src={therapyImg} alt="Book your therapy session" />
 
           </div>
 
