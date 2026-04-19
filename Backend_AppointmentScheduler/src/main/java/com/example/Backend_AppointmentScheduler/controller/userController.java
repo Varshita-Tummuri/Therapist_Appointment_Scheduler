@@ -17,7 +17,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://therapist-appointment-scheduler.vercel.app")
 @RestController
 @RequestMapping("/auth")
 public class userController {
