@@ -84,7 +84,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("src/assets/9487-female_therapist_patient_room-1296x728-header.webp");
+  background-image: url("public/9487-female_therapist_patient_room-1296x728-header.webp");
   background-size: cover;
   background-position: center;
 }

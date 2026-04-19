@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 import { useNavigate } from "react-router-dom";
 import "../styles/home.css";
-import therapyImg from "../assets/Book Your First Therapy Session (1).png";
+import therapyImg from "public/Book Your First Therapy Session (1).png";
 
 
 function Home() {
