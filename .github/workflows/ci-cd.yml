@@ -66,6 +66,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+      
+      - name: Code quality check
+        run: npm run lint
 
       - name: Build frontend
         run: npm run build
