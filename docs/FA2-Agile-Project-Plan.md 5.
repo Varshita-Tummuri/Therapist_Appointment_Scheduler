@@ -1,0 +1,107 @@
+# FA2 — Agile Project Plan
+
+## 1. Project Title
+
+Therapist Appointment Scheduler
+
+## 2. Project Overview
+
+The Therapist Appointment Scheduler is a web-based application that allows patients to book appointments with therapists according to their availability. Therapists can configure their available hours, view booked appointments, and track cancellations. Administrators can view, edit, and delete appointments.
+
+The application has three roles: Patient/User, Therapist, and Admin.
+
+## 3. Project Objective
+
+The objective is to provide a convenient and organized appointment scheduling system while demonstrating Agile project planning and an automated CI/CD pipeline using GitHub Actions.
+
+## 4. User Stories
+
+### US-01: Manage Therapist Availability
+
+As a therapist, I want to set my available hours for different dates so that patients can book sessions when I am available.
+
+Priority: High
+
+### US-02: Book an Appointment
+
+As a patient, I want to select a therapist, choose a date, and view available 30-minute time slots so that I can book a suitable appointment.
+
+Priority: High
+
+### US-03: View and Cancel Appointments
+
+As a patient, I want to view my booked appointments and cancel an appointment when necessary so that I can manage my bookings.
+
+Priority: High
+
+### US-04: View Therapist Appointments
+
+As a therapist, I want to view booked and cancelled appointments so that I can manage my schedule.
+
+Priority: Medium
+
+### US-05: Manage Appointments as Admin
+
+As an administrator, I want to view, edit, and delete appointments so that I can oversee the appointment scheduling system.
+
+Priority: Medium
+
+## 5. Acceptance Criteria — US-02
+
+1. The patient can select a therapist and a date.
+2. If the therapist has configured availability for that date, the application displays available 30-minute slots.
+3. The patient can select an available slot and submit a booking.
+4. If the therapist has not configured availability for that date, the application displays an appropriate message.
+5. The booking is saved and displayed in the patient's appointments, provided the booking operation succeeds.
+
+These criteria must be verified against the actual application before the story is marked complete.
+
+## 6. Sprint Planning
+
+### Sprint 1: Project Review and Planning
+
+Planned activities:
+- Review the existing application and GitHub repository.
+- Finalize user stories and acceptance criteria.
+- Identify the frontend, backend, database, and existing tests.
+- Prepare the Definition of Done.
+- Identify the build and code quality commands.
+
+Expected outcome: An agreed Agile plan and a clear understanding of the existing project.
+
+### Sprint 2: CI/CD Pipeline Implementation
+
+Planned activities:
+- Configure GitHub Actions.
+- Automate the build process.
+- Run automated tests.
+- Add a code quality check.
+- Configure deployment after successful checks.
+- Test the pipeline and prepare demonstration evidence.
+
+Expected outcome: A verified CI/CD pipeline for the existing application.
+
+## 7. Definition of Done
+
+A task is considered complete when:
+- The relevant code changes are committed and pushed to GitHub.
+- The application builds successfully.
+- The applicable automated tests pass.
+- The code quality check passes.
+- The deployment completes successfully when required.
+- The relevant acceptance criteria are verified.
+- The changes and test results are documented.
+
+## 8. CI/CD Workflow
+
+The planned pipeline follows these stages:
+
+GitHub → Build → Automated Testing → Code Quality Check → Deployment
+
+GitHub Actions will automatically execute the configured workflow when a relevant code change is pushed.
+
+The deployment stage should execute only after the required validation stages succeed.
+
+## 9. Expected Outcome
+
+The activity will demonstrate how an existing software project can use Agile planning and CI/CD automation to validate code changes, identify issues early, and deploy a verified application.
